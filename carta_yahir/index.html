@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Yahir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Page -->
+        <div id="login-page" class="page active">
+            <h1>Te amo corazón de melón</h1>
+            <img src="https://tse2.mm.bing.net/th/id/OIP.I23ue-q_b_HymVqDO8jlkgHaF8?rs=1&pid=ImgDetMain" alt="Hanako y Yashiro">
+            <p>Significas mucho para mí como Hanako con Yashiro Nene</p>
+            <input type="text" id="name-input" placeholder="Cosas que te gustan de mí">
+            <button onclick="checkName()">Enviar</button>
+        </div>
+
+        <!-- Card Page -->
+        <div id="card-page" class="page">
+            <h1>Carta para Yahir</h1>
+            <p>Espero que te guste esta carta</p>
+            <button onclick="showPage('envelope-page')">Siguiente</button>
+            <button onclick="showPage('login-page')">Regresar al inicio</button>
+        </div>
+
+        <!-- Envelope Page -->
+        <div id="envelope-page" class="page">
+            <h1>Mensaje para Yahir</h1>
+            <img src="https://th.bing.com/th/id/OIP.TkFQJb8hIqfer8qT2VVmQwHaFQ?o=7rm=3&rs=1&pid=ImgDetMain" alt="Envelope Text">
+            <p class="envelope-text">Significas mucho para mí como Hanako con Yashiro Nene</p>
+            <button onclick="showPage('song-page')">Siguiente</button>
+            <button onclick="showPage('login-page')">Regresar al inicio</button>
+        </div>
+
+        <!-- Song Page -->
+        <div id="song-page" class="page">
+            <h1>Para ti, Yahir</h1>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.IL-SZ1DeSndIfWya7-gXVgHaHa?rs=1&pid=ImgDetMain" alt="Heart">
+            <p>Estas canciones me recuerdan a ti</p>
+            <a href="https://youtu.be/-9l5t3MWss8?si=NkI0-9AcYnzdHm-u" target="_blank">Canción 1: La Camisa Negra - Juanes</a><br>
+            <a href="https://youtu.be/ayCXeExyJxg?si=ohxaUhfWOj8ojDC_" target="_blank">Canción 2: Gotas De Agua Dulce - Juanes</a>
+            <button onclick="showPage('login-page')">Regresar al inicio</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
